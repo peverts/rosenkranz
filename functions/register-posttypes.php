@@ -5,7 +5,7 @@ function baw_register_my_cpts() {
 	/**
 	 * Post Type: Unser Team.
 	 */
-
+	/*
 	$labels = [
 		"name" => __( "Unser Team", "baw" ),
 		"singular_name" => __( "Mitarbeiter", "baw" ),
@@ -46,11 +46,11 @@ function baw_register_my_cpts() {
 	];
 
 	register_post_type( "team", $args );
-
+	*/
 	/**
 	 * Post Type: Bewertungen.
 	 */
-
+	/*
 	$labels = [
 		"name" => __( "Bewertungen", "baw" ),
 		"singular_name" => __( "Bewertung", "baw" ),
@@ -91,12 +91,12 @@ function baw_register_my_cpts() {
 	];
 
 	register_post_type( "bewertung", $args );
-
+	*/
 
 	/**
 	 * Post Type: Projekte.
 	 */
-
+	/*
 	$labels = [
 		"name" => __( "Projekte", "baw" ),
 		"singular_name" => __( "Projekt", "baw" ),
@@ -130,12 +130,12 @@ function baw_register_my_cpts() {
 	];
 
 	register_post_type( "projekt", $args );
-
+	*/
 
 	/**
 	 * Post Type: Leistungen.
 	 */
-
+	/*
 	$labels = [
 		"name" => __( "Leistungen", "baw" ),
 		"singular_name" => __( "Leistung", "baw" ),
@@ -169,6 +169,44 @@ function baw_register_my_cpts() {
 	];
 
 	register_post_type( "leistung", $args );
+	*/
+
+	/**
+	 * Post Type: Angebote.
+	 */
+
+	$labels = [
+		"name" => __( "Angebote", "baw" ),
+		"singular_name" => __( "Angebot", "baw" ),
+	];
+
+	$args = [
+		"label" => __( "Angebote", "baw" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => [ "slug" => "angebot", "with_front" => true ],
+		"query_var" => true,
+		"menu_position" => 20,
+		"menu_icon" => "dashicons-store",
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "angebot", $args );
 }
 
 add_action( 'init', 'baw_register_my_cpts' );

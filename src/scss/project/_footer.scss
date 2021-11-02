@@ -13,6 +13,21 @@
         margin: .75em 0;
     }
 
+    .footer-opening{
+        svg{
+            margin-top: 5px;
+            margin-right: 13px;
+        }
+        .content{
+            p{
+                font-size: 0.9em;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
 
     a {
         color: inherit;
@@ -38,6 +53,12 @@
         }
     }
 
+    &-contact{
+        li{
+            margin-bottom: 1em !important;
+        }
+    }
+
 
     // -------------------------------------------
     // Textbereich
@@ -51,10 +72,13 @@
 
     // -------------------------------------------
     // Social Media Box
-
-    &-social {
-        .social {
-            font-size: 1.2em;
+    .socials {
+        svg{
+            height: 1.4em;
+            width: 1.4em;
+            path{
+                fill: $w-color-primary !important;
+            }
         }
     }
 

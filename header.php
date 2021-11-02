@@ -62,15 +62,30 @@ $page_header	= $override_header ?: $global_header;
 			</div>
 		</div>
 	<?php } ?>
-	<header class="header header--sticky" id="header" role="banner">
+	<header class="header <?php if(get_field('header_fixierung') == "sticky"){ ?>header--sticky<?php }elseif(get_field('header_fixierung') == "fixed"){ ?>header--fixed<?php } ?>" id="header" role="banner">
 		<div class="header-inner">
 			<div class="header-container">
-				<div class="header-col">
-				    <div class="header-item header-item--logo">
-						<?php include_once 'tpl/partials/logo-function.php'; ?>
-						<?php include 'tpl/partials/logo.php'; ?>
-					</div>
-				</div>
+                <div class="header-col uk-visible@m">
+                    <div class="header-item header-item--nav nav">
+                        <nav class="nav-list" role="navigation">
+                            <?php echo wp_nav_menu(array('menu' =>'Navigation-Links')); ?>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-col">
+                    <div class="header-item header-item--logo">
+                        <?php include_once 'tpl/partials/logo-function.php'; ?>
+                        <?php include 'tpl/partials/logo.php'; ?>
+                    </div>
+                </div>
+                <div class="header-col uk-visible@m">
+                    <div class="header-item header-item--nav nav">
+                        <nav class="nav-list" role="navigation">
+                            <?php echo wp_nav_menu(array('menu' =>'Navigation-Rechts')); ?>
+                        </nav>
+                    </div>
+                </div>
+                <!--
 				<div class="header-col">
 					<?php include 'tpl/partials/header-nav.php'; ?>
 					<?php include 'tpl/partials/calltoaction.php'; ?>
@@ -78,6 +93,7 @@ $page_header	= $override_header ?: $global_header;
 					<?php include 'tpl/partials/header-lang.php'; ?>
 					<?php include 'tpl/partials/header-nav-mobile.php'; ?>
 				</div>
+				-->
 			</div>
 		</div>
 	</header>

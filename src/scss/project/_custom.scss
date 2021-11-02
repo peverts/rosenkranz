@@ -1,0 +1,42 @@
+//GLOBAL
+strong{
+  font-weight: 300;
+}
+
+//Connector-Overrides
+.connector{
+  position: relative;
+  .post-title{
+    color: $w-color-dark;
+    font-size: 1.1em;
+  }
+  .slider-arrow{
+    border-radius: 0;
+    background: $w-color-primary;
+    svg{
+      path{
+        fill: #fff;
+      }
+    }
+  }
+
+
+  //TYPE ANGEBOT
+  .type-angebot{
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .post-title{
+        margin: 0;
+      }
+      .price{
+        font-family: Oswald;
+        color: $w-color-primary;
+        margin: 0;
+        font-weight: 600;
+        line-height: 1;
+      }
+    }
+  }
+}

@@ -126,6 +126,10 @@ wp.blocks.registerBlockStyle( 'core/heading', {
 	name: 'h6',
 	label: 'H6-Optik'
 } );
+wp.blocks.registerBlockStyle( 'core/heading', {
+	name: 'subheadline',
+	label: 'Subheadline'
+} );
 
 
 
@@ -163,4 +167,10 @@ wp.blocks.registerBlockStyle( 'core/paragraph', {
 wp.blocks.registerBlockStyle( 'core/paragraph', {
 	name: 'h6',
 	label: 'H6-Optik'
+} );
+
+//GHOSTKIT BUTTON
+wp.blocks.registerBlockStyle( 'ghostkit/button-single', {
+	name: 'button-plain',
+	label: 'Button Plain'
 } );
