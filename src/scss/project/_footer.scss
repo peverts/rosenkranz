@@ -1,6 +1,8 @@
 .footer {
-    @include w-block-padding-y();
+    //@include w-block-padding-y();
     box-shadow: $w-def-box-shadow;
+
+    padding: 3em 0;
 
     //background: $w-color-dark;
     //color: $w-color-white;
@@ -10,7 +12,7 @@
     }
 
     &-item {
-        margin: .75em 0;
+        margin: 2em 0;
     }
 
     .footer-opening{
@@ -20,7 +22,7 @@
         }
         .content{
             p{
-                font-size: 0.9em;
+                font-size: $w-font-size-small;
                 &:first-child{
                     margin-top: 0;
                 }

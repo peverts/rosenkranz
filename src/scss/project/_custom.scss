@@ -8,7 +8,15 @@ strong{
   position: relative;
   .post-title{
     color: $w-color-dark;
-    font-size: 1.1em;
+    font-size: 1.33em;
+    @media(max-width: $w-breakpoint-small){
+      font-size: 1.2em;
+    }
+  }
+  .post-content{
+    p{
+      font-size: $w-font-size-small;
+    }
   }
   .slider-arrow{
     border-radius: 0;
@@ -27,6 +35,7 @@ strong{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       .post-title{
         margin: 0;
       }
@@ -36,6 +45,24 @@ strong{
         margin: 0;
         font-weight: 600;
         line-height: 1;
+        font-size: 1.33em;
+        @media(max-width: $w-breakpoint-small){
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+  @media(max-width: $w-breakpoint-small){
+    .connector-inner{
+      padding: 0;
+    }
+    .slider-arrow{
+      &.slider-arrow-prev{
+        left: -15px;
+      }
+      &.slider-arrow-next{
+        right: -15px;
       }
     }
   }

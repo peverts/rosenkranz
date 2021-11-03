@@ -85,15 +85,13 @@ $page_header	= $override_header ?: $global_header;
                         </nav>
                     </div>
                 </div>
-                <!--
-				<div class="header-col">
-					<?php include 'tpl/partials/header-nav.php'; ?>
-					<?php include 'tpl/partials/calltoaction.php'; ?>
-					<?php include 'tpl/partials/header-contact.php'; ?>
-					<?php include 'tpl/partials/header-lang.php'; ?>
+				<div class="header-col uk-hidden@m">
+					<!--<?php include 'tpl/partials/header-nav.php'; ?>-->
+					<!--<?php include 'tpl/partials/calltoaction.php'; ?>-->
+					<!--<?php include 'tpl/partials/header-contact.php'; ?>-->
+					<!--<?php include 'tpl/partials/header-lang.php'; ?>-->
 					<?php include 'tpl/partials/header-nav-mobile.php'; ?>
 				</div>
-				-->
 			</div>
 		</div>
 	</header>

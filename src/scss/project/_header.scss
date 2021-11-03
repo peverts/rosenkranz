@@ -1,6 +1,4 @@
 .header {
-    transform: translateY(0) !important;
-
     &--sticky,
     &--fixed {
         z-index: 400;
@@ -10,6 +8,7 @@
     }
     &--sticky {
         position: sticky;
+        transform: translateY(0) !important;
     }
 
     &--fixed {

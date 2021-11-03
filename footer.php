@@ -31,8 +31,8 @@ $page_support	= $override_support ?: $global_support;
 <footer class="footer">
 	<div class="footer-inner">
 		<div class="uk-grid uk-grid-large uk-flex-between">
-			<div class="uk-width-1-4@l uk-flex uk-flex-column uk-flex-between">
-                <div class="logo-social-wrapper uk-flex uk-flex-between uk-flex-middle">
+			<div class="uk-width-1-4@l uk-flex uk-flex-column uk-flex-between uk-flex-last uk-flex-first@l">
+                <div class="logo-social-wrapper uk-flex uk-flex-between uk-flex-middle footer-item">
                     <div class="logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="162" height="35" viewBox="0 0 162 35">
                             <g id="Gruppe_47" data-name="Gruppe 47" transform="translate(-236.936 -2066.566)">
@@ -48,7 +48,7 @@ $page_support	= $override_support ?: $global_support;
                     </div>
                 </div>
 				<?php if(has_nav_menu('footer')) { ?>
-					<div><div class="footer-item footer-menu">
+					<div><div class="footer-menu">
 						<?php wp_nav_menu(array('theme_location' => 'footer', 'container' => false, 'fallback_cb' => false)); ?>
 					</div></div>
 				<?php } ?>

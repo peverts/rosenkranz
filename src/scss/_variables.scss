@@ -1,6 +1,7 @@
 //Farben
 $w-color-primary: #BC8110;
 $w-color-light: #F8F8F8;
+$w-color-dark: #1E2220;
 
 $w-def-box-shadow: 0 0.5em 2.25em -1.15em rgba(0,0,0, .3);
 $w-def-box-shadow-hover: $w-def-box-shadow;
@@ -8,18 +9,25 @@ $w-def-box-shadow-hover: $w-def-box-shadow;
 //TYPO
 $w-def-font-family: Inter;
 $w-def-font-weight: 200;
-$w-def-line-height: 1.8;
+$w-def-line-height: 1.7;
+
 $w-headline-font-family: Oswald;
 $w-headline-font-weight: 600;
 $w-headline-text-transform: uppercase;
-$w-color-dark: #1E2220;
+$w-headline-line-height: 1.1;
 
-$w-h1-size-bp: 2.9em;
+$w-font-size-small: .94em;
+$w-font-size-big: 1.11em;
+$w-font-size-large: 1.38em;
+
+$w-h1-size-bp: 3.88em;
+$w-h2-size-bp: 2.77em;
+$w-h3-size-bp: 1.33em;
 
 $w-button-font-family: Oswald;
 $w-button-font-weight: 500;
 $w-button-text-transform: uppercase;
-$w-button-font-size: 0.8em;
+$w-button-font-size: 1em;
 
 //Block Margins
 $w-container-padding-y-m: 10rem;
